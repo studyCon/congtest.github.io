@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>WebWork</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>UserServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserServlet.do</servlet-name>
+  	<url-pattern>/user/add.do</url-pattern>
+  	<url-pattern>/user/addUser.do</url-pattern>
+  	<url-pattern>/user/list.do</url-pattern>
+  	<url-pattern>/user/update.do</url-pattern>
+  	<url-pattern>/user/updateUser.do</url-pattern>
+  	<url-pattern>/user/delete.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CategoryServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CategoryServlet.do</servlet-name>
+  	<url-pattern>/category/add.do</url-pattern>
+  	<url-pattern>/category/addCate.do</url-pattern>
+  	<url-pattern>/category/list.do</url-pattern>
+  	<url-pattern>/category/update.do</url-pattern>
+  	<url-pattern>/category/updateCate.do</url-pattern>
+  	<url-pattern>/category/delete.do</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  	<servlet-name>NewsServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NewsServlet.do</servlet-name>
+  	<url-pattern>/news/add.do</url-pattern>
+  	<url-pattern>/news/addNews.do</url-pattern>
+  	<url-pattern>/news/list.do</url-pattern>
+  	<url-pattern>/news/update.do</url-pattern>
+  	<url-pattern>/news/updateNews.do</url-pattern>
+  	<url-pattern>/news/delete.do</url-pattern>
+  	<url-pattern>/news/findByCateName.do</url-pattern>
+  	<url-pattern>/news/findBySeCateName.do</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+  	<servlet-name>SlideshowServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.SlideshowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SlideshowServlet.do</servlet-name>
+  	<url-pattern>/slideshow/add.do</url-pattern>
+  	<url-pattern>/slideshow/addSlideshow.do</url-pattern>
+  	<url-pattern>/slideshow/list.do</url-pattern>
+  	<url-pattern>/slideshow/update.do</url-pattern>
+  	<url-pattern>/slideshow/updateSlideshow.do</url-pattern>
+  	<url-pattern>/slideshow/delete.do</url-pattern>
+  </servlet-mapping>  
+ 
+  <servlet>
+  	<servlet-name>ComInfoSerlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.ComInfoSerlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ComInfoSerlet.do</servlet-name>
+  	<url-pattern>/cominfo/update.do</url-pattern>
+  	<url-pattern>/cominfo/updateCominfo.do</url-pattern>
+  </servlet-mapping>    
+  
+<!--   <servlet>
+  	<servlet-name>SlideshowServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.SlideshowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SlideshowServlet.do</servlet-name>
+  	<url-pattern>/slideshow/add.do</url-pattern>
+  	<url-pattern>/slideshow/addSlideshow.do</url-pattern>
+  	<url-pattern>/slideshow/list.do</url-pattern>
+  	<url-pattern>/slideshow/update.do</url-pattern>
+  	<url-pattern>/slideshow/updateSlideshow.do</url-pattern>
+  	<url-pattern>/slideshow/delete.do</url-pattern>
+  </servlet-mapping>   -->
+ 
+ 
+  <servlet>
+  	<servlet-name>homeServlet.do</servlet-name>
+  	<servlet-class>com.xxx.servlet.homeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>homeServlet.do</servlet-name>
+  	<url-pattern>/home/index.do</url-pattern>
+  </servlet-mapping>  
+  
+</web-app>
